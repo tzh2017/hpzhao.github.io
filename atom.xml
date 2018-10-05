@@ -65,9 +65,9 @@
       <category term="Machine Learning" scheme="http://yoursite.com/categories/Machine-Learning/"/>
     
     
-      <category term="Machine Learning" scheme="http://yoursite.com/tags/Machine-Learning/"/>
-    
       <category term="Convex Optimization" scheme="http://yoursite.com/tags/Convex-Optimization/"/>
+    
+      <category term="Machine Learning" scheme="http://yoursite.com/tags/Machine-Learning/"/>
     
   </entry>
   
