@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="reinforcement learning,e-commerce," />
 
 
 
@@ -85,16 +85,18 @@
 
 
 
-<meta name="description" content="我走过山时山不说话，我路过海时海不说话">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Huaipeng Zhao">
-<meta property="og:url" content="http://yoursite.com/tags/Python/index.html">
+<meta name="description" content="Motivation流量分配(impression allocation)是电商平台的核心问题之一.主流的流量分配做法一般将其视为一个信息检索问题或者推荐问题.代表性的方法是建模一个CTR(Click-Through-Rate)模型来给每个商品打分，然后通过分数的高低来进行流量分配.这些模型主要关注短期回报，没有考虑长期回报.另外这还会导致商品的更新迭代的速度变慢，例如商品的冷启动周期会变长.这篇">
+<meta name="keywords" content="reinforcement learning,e-commerce">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design(笔记)">
+<meta property="og:url" content="http://yoursite.com/2018/11/21/Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design/index.html">
 <meta property="og:site_name" content="Huaipeng Zhao">
-<meta property="og:description" content="我走过山时山不说话，我路过海时海不说话">
+<meta property="og:description" content="Motivation流量分配(impression allocation)是电商平台的核心问题之一.主流的流量分配做法一般将其视为一个信息检索问题或者推荐问题.代表性的方法是建模一个CTR(Click-Through-Rate)模型来给每个商品打分，然后通过分数的高低来进行流量分配.这些模型主要关注短期回报，没有考虑长期回报.另外这还会导致商品的更新迭代的速度变慢，例如商品的冷启动周期会变长.这篇">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-11-21T09:12:08.022Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Huaipeng Zhao">
-<meta name="twitter:description" content="我走过山时山不说话，我路过海时海不说话">
+<meta name="twitter:title" content="Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design(笔记)">
+<meta name="twitter:description" content="Motivation流量分配(impression allocation)是电商平台的核心问题之一.主流的流量分配做法一般将其视为一个信息检索问题或者推荐问题.代表性的方法是建模一个CTR(Click-Through-Rate)模型来给每个商品打分，然后通过分数的高低来进行流量分配.这些模型主要关注短期回报，没有考虑长期回报.另外这还会导致商品的更新迭代的速度变慢，例如商品的冷启动周期会变长.这篇">
 
 
 
@@ -124,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Python/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/21/Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design/"/>
 
 
 
 
 
-  <title>Tag: Python | Huaipeng Zhao</title>
+  <title>Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design(笔记) | Huaipeng Zhao</title>
   
 
 
@@ -158,7 +160,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/hpzhao"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -296,138 +298,252 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Python<small>Tag</small>
-        </h2>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/21/Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Huaipeng Zhao">
+      <meta itemprop="description" content="我走过山时山不说话，我路过海时海不说话">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Huaipeng Zhao">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2016/08/11/Python数据持久化模块Pickle/" itemprop="url">
-              
-                <span itemprop="name">Python数据持久化模块Pickle</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design(笔记)</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-11T10:50:30+08:00"
-              content="2016-08-11" >
-          08-11
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-21T14:51:08+08:00">
+                2018-11-21
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reinforcement-learning/" itemprop="url" rel="index">
+                    <span itemprop="name">reinforcement learning</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reinforcement-learning/notes/" itemprop="url" rel="index">
+                    <span itemprop="name">notes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/11/21/Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design/" class="leancloud_visitors" data-flag-title="Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design(笔记)">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  4
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/07/24/Python模块与包/" itemprop="url">
-              
-                <span itemprop="name">Python模块与包</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-07-24T15:52:49+08:00"
-              content="2016-07-24" >
-          07-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
+        <h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>流量分配(impression allocation)是电商平台的核心问题之一.主流的流量分配做法一般将其视为一个信息检索问题或者推荐问题.代表性的方法是建模一个CTR(Click-Through-Rate)模型来给每个商品打分，然后通过分数的高低来进行流量分配.<br>这些模型主要关注短期回报，没有考虑长期回报.另外这还会导致商品的更新迭代的速度变慢，例如商品的冷启动周期会变长.这篇论文提出一个基于强化学习的流量分配模型，同时考虑了短期回报和长期回报，也降低了商品的更新迭代周期.</p>
+<h2 id="Product-Lifecycle-Model"><a href="#Product-Lifecycle-Model" class="headerlink" title="Product Lifecycle Model"></a>Product Lifecycle Model</h2><p>通过观测商品CTR历史变化趋势，可以将商品划分4个阶段：</p>
+<ul>
+<li><em>Introduction:</em> Also known as <em>market development</em> - this is when a new product is first brought to market. Sales are low and creep along slowly.</li>
+<li><em>Growth:</em> Demand begins to accelerate and the size of the total market expands rapidly.</li>
+<li><em>Maturaty:</em> Demand levels off and grows.</li>
+<li><em>Decline:</em> The product begins to lose consumer appeal and sales drift downward.</li>
+</ul>
+<image src="/images/15_19_14__11_21_2018.jpg" width="60%" height="90%">
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<p>通过强化学习的试错(trial-and-error),模型能够在introduction阶段提前发现潜在的爆款，也能够在decline阶段发现滞销商品，从而加速了更新迭代周期(metabolism)，提高了流量利用效率.</p>
+<p>在第$t$步，每个商品表示为$x_t \in \mathbb{R}^d$,$d$为商品的特征维度，商品所处的潜在生命周期为$z_t \in \mathcal{L}$,其中$\mathcal{L} = { 0,1,2,3 }$. $p_t \in \mathbb{R}$代表CTR,$q_t \in \mathbb{R}$代表商品累积的流量.此时分配的流量为$u_t \in \mathbb{R}$，那么:<br>$$<br>\begin{cases}<br>q_{t+1} = q_t + u_t\\<br>p_{t+1} = p_t + f(z_t,q_t)\\<br>z_{t+1} = \mathcal{g}(x_t,z_t,t)<br>\end{cases}<br>$$<br>其中，$f$为$p$的导数，$\mathcal{g}$为状态转移函数.论文中有详细介绍其计算公式.商品生命周期的状态转移如下图所示：</p>
+<image src="/images/16_21_45__11_21_2018.jpg" width="60%" height="90%">
 
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/07/11/Python中的with语句/" itemprop="url">
-              
-                <span itemprop="name">Python中的with语句</span>
-              
-            </a>
-        
-      </h3>
+<h2 id="A-SCALABLE-REINFORCEMENT-MECHANISM-DESIGN-FRAMEWORK"><a href="#A-SCALABLE-REINFORCEMENT-MECHANISM-DESIGN-FRAMEWORK" class="headerlink" title="A SCALABLE REINFORCEMENT MECHANISM DESIGN FRAMEWORK"></a>A SCALABLE REINFORCEMENT MECHANISM DESIGN FRAMEWORK</h2><p>在上述场景中，每一步平台观测所有商品的全局信息，然后通过观测和策略给商品分配流量，这样每个商品的特征和生命周期会发生变化.然后平台能通过反馈来评价这次分配的好坏.下面形式化定义上述过程.</p>
+<h3 id="state"><a href="#state" class="headerlink" title="state"></a>state</h3><p>我们将平台的全局信息作为状态：<br>$$ s = [x_1,x_2,\dots,x_n]^T \in \mathbb{R}^{n \times d} $$</p>
+<h3 id="action"><a href="#action" class="headerlink" title="action"></a>action</h3><p>我们将商品特征的权重作为action，这样的好处就是避免了维度过大.<br>$$ a = \pi (s|\theta^{\mu}) \in \mathbb{R}^d$$<br>那么我们可以进一步计算每个商品的分数：<br>$$ o_i = \frac{1}{1 + e^{-a^Tx_i}}, \forall i \in {1,2,\dots,n} $$<br>每个商品要分配流量可以通过下面来得到：<br>$$ u_i = \frac{e^{o_i}}{\sum_i^{n}e^{o_i}}, \forall i \in {1,2,\dots,n}$$</p>
+<h3 id="reward"><a href="#reward" class="headerlink" title="reward"></a>reward</h3><p>reward的定义如下：<br>$$ R(s,a) = \frac{1}{n}\sum\limits_i^n\left[\frac{1}{t_i}\int_{t=0}^{t_i}p(t)\frac{dq(t)}{dt}dt\right]$$<br>其含义为最大化平台所有商品在其生命周期内的期望点击量.可以近似为：<br>$$ R(s,a) \approx \frac{1}{n}\sum\limits_i^{n}\frac{1}{t_i}\sum\limits_{\tau=0}^{t_i}p_\tau^iu_\tau^i$$</p>
+<h3 id="issues"><a href="#issues" class="headerlink" title="issues"></a>issues</h3><p>由于平台的商品量极大，所以要采样一部分商品来表示平台的状态：<br>$$\hat{s} = [x_1,x_2,\dots,x_{n_s}]^T \in \mathbb{R}^{n_s \times d}$$<br>这样会导致两个问题：</p>
+<ol>
+<li>采样的$n_s$个商品应该如何排序来保持排序不变性(permutation invariance).</li>
+<li>如何减少采样带来的偏置，特别是$n_s$元小于$n$时.</li>
+</ol>
+<p>对于问题1论文提出利用PCA对特征降维来进行排序;对于问题二论文提出repeated sampling based Experiences Genaration算法来解决.论文有细节描述，这里不再展开.</p>
+<h2 id="The-Results"><a href="#The-Results" class="headerlink" title="The Results"></a>The Results</h2><p>商品的四个生命周期时间随着训练变化的趋势如下图：</p>
+<p><image src="/images/17_03_38__11_21_2018.jpg" width="70%" height="90%"><br>从图中我们能看出随着训练进行decline阶段周期明显下降，这能够避免平台的流量浪费.</image></p>
+<p>下图展示了和CTR模型相比三个指标的变化，我们可以看到平均点击增加了6%，商品成长到maturity时期的时间降低了26%，这意味着商品迭代周期明显加速.</p>
+<image src="/images/17_07_39__11_21_2018.jpg" width="70%" height="90%">
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-07-11T15:45:19+08:00"
-              content="2016-07-11" >
-          07-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-            <a class="post-title-link" href="/2016/07/11/Python解析XML/" itemprop="url">
-              
-                <span itemprop="name">Python解析XML</span>
-              
-            </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-07-11T14:06:57+08:00"
-              content="2016-07-11" >
-          07-11
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+</image></image></image>
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/reinforcement-learning/" rel="tag"><i class="fa fa-tag"></i> reinforcement learning</a>
+          
+            <a href="/tags/e-commerce/" rel="tag"><i class="fa fa-tag"></i> e-commerce</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/17/Mac终端配置/" rel="next" title="Mac终端配置">
+                <i class="fa fa-chevron-left"></i> Mac终端配置
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -435,6 +551,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -455,8 +575,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -543,6 +672,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Motivation"><span class="nav-number">1.</span> <span class="nav-text">Motivation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Product-Lifecycle-Model"><span class="nav-number">2.</span> <span class="nav-text">Product Lifecycle Model</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#A-SCALABLE-REINFORCEMENT-MECHANISM-DESIGN-FRAMEWORK"><span class="nav-number">3.</span> <span class="nav-text">A SCALABLE REINFORCEMENT MECHANISM DESIGN FRAMEWORK</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#state"><span class="nav-number">3.1.</span> <span class="nav-text">state</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#action"><span class="nav-number">3.2.</span> <span class="nav-text">action</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reward"><span class="nav-number">3.3.</span> <span class="nav-text">reward</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#issues"><span class="nav-number">3.4.</span> <span class="nav-text">issues</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-Results"><span class="nav-number">4.</span> <span class="nav-text">The Results</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -679,6 +824,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
