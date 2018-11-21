@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="Huaipeng Zhao">
 <meta property="og:description" content="Motivation流量分配(impression allocation)是电商平台的核心问题之一.主流的流量分配做法一般将其视为一个信息检索问题或者推荐问题.代表性的方法是建模一个CTR(Click-Through-Rate)模型来给每个商品打分，然后通过分数的高低来进行流量分配.这些模型主要关注短期回报，没有考虑长期回报.另外这还会导致商品的更新迭代的速度变慢，例如商品的冷启动周期会变长.这篇">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-11-21T09:12:08.022Z">
+<meta property="og:updated_time" content="2018-11-21T09:45:28.343Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Speeding up the Metabolism in E-commerce by Reinforcement Mechanism Design(笔记)">
 <meta name="twitter:description" content="Motivation流量分配(impression allocation)是电商平台的核心问题之一.主流的流量分配做法一般将其视为一个信息检索问题或者推荐问题.代表性的方法是建模一个CTR(Click-Through-Rate)模型来给每个商品打分，然后通过分数的高低来进行流量分配.这些模型主要关注短期回报，没有考虑长期回报.另外这还会导致商品的更新迭代的速度变慢，例如商品的冷启动周期会变长.这篇">
@@ -477,7 +477,7 @@
 <li>采样的$n_s$个商品应该如何排序来保持排序不变性(permutation invariance).</li>
 <li>如何减少采样带来的偏置，特别是$n_s$元小于$n$时.</li>
 </ol>
-<p>对于问题1论文提出利用PCA对特征降维来进行排序;对于问题二论文提出repeated sampling based Experiences Genaration算法来解决.论文有细节描述，这里不再展开.</p>
+<p>对于问题1论文提出利用PCA对特征降维来进行排序;对于问题2论文提出repeated sampling based Experiences Genaration算法来解决.论文有细节描述，这里不再展开.</p>
 <h2 id="The-Results"><a href="#The-Results" class="headerlink" title="The Results"></a>The Results</h2><p>商品的四个生命周期时间随着训练变化的趋势如下图：</p>
 <p><image src="/images/17_03_38__11_21_2018.jpg" width="70%" height="90%"><br>从图中我们能看出随着训练进行decline阶段周期明显下降，这能够避免平台的流量浪费.</image></p>
 <p>下图展示了和CTR模型相比三个指标的变化，我们可以看到平均点击增加了6%，商品成长到maturity时期的时间降低了26%，这意味着商品迭代周期明显加速.</p>
