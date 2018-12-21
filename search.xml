@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[轻量级Java矩阵运算库]]></title>
+    <url>%2F2018%2F12%2F21%2F%E8%BD%BB%E9%87%8F%E7%BA%A7Java%E7%9F%A9%E9%98%B5%E8%BF%90%E7%AE%97%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[[Code] Construction create Matrix from double array create Matrix from List&lt;? extends Number&gt; create Matrix from Matrix ones,onesLike,zeros,zerosLike,random diag Basic shape,copy,get,set,checkMatrixDimensions,getArray,print Operation add,addi,sub,subi,mul,muli,mmul,div,divi norm1,norm2,squareDistance sum,max,min,abs,concat transpose reshape sum by dim invert]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[从源码安装tmux]]></title>
     <url>%2F2018%2F12%2F13%2F%E4%BB%8E%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85tmux%2F</url>
     <content type="text"><![CDATA[方案一：从二进制包安装On Debian/Ubuntu based1$ sudo apt-get install tmux On RedHat/CentOS based1$ sudo yum isntall tmux 方案二：从源码安装1.下载源文件和依赖 tmux-1.8 libevent-2.0.21 2.安装依赖1$ sudo yum install gcc kernel-devel make ncurses-devel y 3.安装libevent21234$ export DIR="$HOME/.local"$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DIR/lib$ ./configure --prefix=$DIR CFLAGS="-I$DIR/include" LDFLAGS="-L$DIR/lib"$ make &amp;&amp; make install 4.安装tmux123$ sh aotogen.sh$ ./configure &amp;&amp; make$ sudo make install 注：如果没有管理员权限，那么需要配置prefix到自己目录 参考文献 How to Install tmux and Manage Multiple Linux Terminals Tmux: Error While Loading Shared Libraries: libevent-2.0.so.5]]></content>
